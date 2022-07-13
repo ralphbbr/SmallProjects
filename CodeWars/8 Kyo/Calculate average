@@ -1,0 +1,22 @@
+//Write a function which calculates the average of the numbers in a given list.
+
+//Note: Empty arrays should return 0.
+
+
+class AverageSolution
+{
+  public static double FindAverage(double[] array)
+  {
+    double sum = 0;
+    int count = 0;
+    double average;
+    
+    for(int i = 0; i < array.Length; i++){
+      sum += array[i];
+      count++;
+    }
+    if(count > 0) average = sum/count;
+    else average = 0;
+    return average;
+  }
+} 
